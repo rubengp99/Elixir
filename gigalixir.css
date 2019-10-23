@@ -1,0 +1,531 @@
+/******* GENERAL STYLES *******/
+
+@import "https://fonts.googleapis.com/css?family=Roboto&display=swap";
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif!important;
+}
+
+::-webkit-scrollbar{
+    display:none;
+}
+
+html{
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+body{
+    margin: 0;
+    background:#FDFDFD;
+}
+
+ul{
+    list-style-type: none;
+   
+}
+
+a{
+    text-decoration: none;
+}
+
+/*********** NAVBAR ************/
+
+  #navbar {
+    z-index: 3;
+    width: 100vw;
+    height: 41px;
+    position: absolute;
+    
+  }
+
+  #navbar ul {
+    display: inline-flex;
+    float: right;
+    margin-right:10px;
+    margin-top: 10px;
+  }
+  
+  #navbar ul li {     
+      display: inline-flex;
+      position: relative;
+      margin-top:-5px;
+  }
+
+
+  #rectangle {
+    z-index: 4;
+    width: 88px;
+    height: 41px;
+    border-radius: 8px;
+    background: #ffffff;
+  }
+  
+  #about {
+    text-align: center;
+    z-index: 4;
+    width: 100%;
+    height: 17px;
+    color: #606a84;
+    font-family: "Usual-Regular";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+  
+  #gigalixir {
+    z-index: 4;
+    width: 17.16px;
+    height: 15.42px;
+    background: #2e363e;
+  }
+  
+  #docs {
+    text-align: center;
+    z-index: 4;
+    width:100%;
+    height: 17px;
+    color: #606a84;
+    font-family: "Usual-Regular";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+  
+  .sign_button{
+    z-index: 4;
+    width: 88px;
+    height: 41px;
+    border-radius: 8px;
+    background: #ffffff;
+  }
+
+  #signIn {
+    z-index: 4;
+    width: 100%;
+    height: 17px;
+    color: #606a84;
+    font-family: "Usual-Regular";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: center;
+  }
+
+/******** HERO LAYER **********/
+
+#hero {
+    z-index: 3;
+    width: 1272px;
+    height: 805px;
+  }
+  
+  #hero_container {
+    z-index: 4;
+    width: 100vw;
+    height: 490px;
+    background: #f5f9fc;
+  }
+
+  #hero_container section{
+      display: inline-block;
+  }
+
+  /*** sizing for the hero layer on small devices**/
+
+  @media (min-width: 320px) and (max-width: 780px){
+    #hero_container {
+        z-index: 4;
+        width: 100vw;
+        height: 295px;
+        background: #f5f9fc;
+      }
+
+  }
+  
+  #group {
+    z-index: 4;
+    width: 577px;
+    height: 380px;
+  }
+  
+  #group14 {
+    visibility: hidden;
+    z-index: 5;
+    width: 379px;
+    height: 576px;
+    transform: rotate(90.00001deg);
+  }
+  
+  
+  #elixirsPla {
+    z-index: 4;
+    width: 418.06px;
+    height: 41px;
+    color: #2e363e;
+    font-family: "Usual-Regular";
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: -0.08947369px;
+  }
+  
+  #group1052 {
+    z-index: 4;
+    width: 50.080vw;
+    height: 100%;
+    float: right;
+    
+  }
+
+  #group1052 svg{
+    float: right;
+    margin-right: 10px;
+  }
+
+ 
+  #group15 {
+    z-index: 4;
+    width: 49.020vw;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+  }
+
+  #group15 h1, #group15 p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px auto;
+  }
+  
+  .getStarted{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+  }
+
+  @media (min-width:768px){
+    .getStarted h1{
+      font-size:35px;
+    }
+    .getStarted p{
+        font-size:20px;
+      }
+  }
+
+  #getStarted_Button{
+    z-index: 5;
+    max-width:160px;
+    height: 30px;
+    border-radius: 4px;
+    background: #425ae6;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  #getStarted {
+    z-index: 5;
+    width: 100%;
+    height: 19px;
+    color: #d1f1ff;
+    font-family: "Usual-Medium";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.08888889px;
+    display: block;
+    margin-left: auto;
+    padding-top: 5px;
+  }
+
+  /** features of elixir******/
+  #features_container{
+      display: block;
+      z-index: 5;
+      width: 100vw;
+  }
+
+
+  .element{
+      width: 48%;
+      display:inline-block;
+      position: relative;
+      height:342px;
+      text-align: justify;
+  }
+
+  .v-align{
+    position: absolute;
+   
+  }
+
+  .desc {
+    z-index: 6;
+    width: 100%;
+    color: #606a84;
+    font-family: "Usual-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.08888889px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    
+  }
+
+  @media (min-width:768px){
+    .desc {
+        width: 70%;
+      }
+  }
+  
+
+  .feature {
+    z-index: 5;
+    width: 100%;
+    height: 331px;
+    position: relative;
+  }
+
+    @media (max-width:500px){
+        #limits .element{
+            transform: translateX(15px);
+        }
+    }
+
+    @media (min-width:501px){
+        #limits .element{
+            transform: translateX(30px);
+        }
+    }
+
+    @media (min-width:993px){
+        #limits .element{
+            transform: translateX(35px);
+        }
+    }
+
+    .title{
+            font-size: 40px;
+            color: rgba(0,0,0,.7);
+    }
+
+    @media (max-width:500px){
+        .title{
+            font-size: 20px;
+        }
+    }
+
+    .fix{
+        top: 50%;
+        transform: translate(10%,-40%)!important;
+        position: absolute;
+        right: 50%;
+    }
+
+    @media (min-width:768px){
+        .fix{
+            padding-left: 30px;
+            transform: translate(25%,-40%)!important;
+        }
+    }
+
+
+    /********** BRAND SECTION ************/
+
+    #brands{
+        opacity: 0.5197638;
+        z-index: 3;
+        width: 100vw;
+        height: 338px;
+        background: #f5f9fc;
+        text-align: center;
+    }
+
+    #brands ul li{
+        display: inline-block;
+        width: 30%;
+        margin: 50px 10px 0px 10px;
+    }
+
+    #info{
+        width: 100vw;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    /*********** CARDS SECTION WITH INFO + READ MORE **********/
+
+    .card_info{
+        text-align: justify;
+        z-index: 5;
+        width: 300px;
+        height: 290px;
+        border-radius: 6px;
+        border: solid 1px rgb(212, 212, 212);
+        display: inline-grid;
+        margin: 10px;
+        padding: 20px;
+    
+    }
+
+    .card_info p{
+        z-index: 5;
+        width: 100%;
+        height: 182px;
+        color: #606a84;
+        font-family: "Usual-Regular";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: -0.07777778px;
+        word-break: keep-all;
+    }
+
+    .card_info p strong{
+        cursor:pointer;
+    }
+
+    .card_info .title{
+        z-index: 5;
+        width: 100%;
+        height: 19px;
+        color: #2e363e;
+        font-family: "Usual-Medium";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+
+/***************** PLANS SECTION ************/
+
+    #plans{
+        z-index: 3;
+        width: 100vw;
+        background: #3c3869;
+        text-align:center;
+    }
+
+    @media (min-width: 400px){
+        .plan_card{
+            z-index: 4;
+            width: 360px;
+            height: 550px;
+            border-radius: 6px;
+            border: solid 1px #eff2f8;
+            background: #ffffff;
+            margin: 40px;
+            display:inline-block;
+            position: relative;
+        }
+
+        
+    }
+
+    @media (max-width: 400px){
+        .plan_card{
+            z-index: 4;
+            width: 300px;
+            height: 550px;
+            border-radius: 6px;
+            border: solid 1px #eff2f8;
+            background: #ffffff;
+            margin: 10px;
+            display:inline-block;
+            position: relative;
+        }
+
+        
+    }
+
+    
+    .price{
+        z-index: 4;
+        width: 301px;
+        height: 59px;
+        color: #606a84;
+        font-family: "Usual-Regular";
+        font-size: 70px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: -0.3888889px;
+        margin: 55px auto 0px auto;
+        display:block;
+    }
+
+    .plan_card p{
+        z-index: 4;
+        width: 301px;
+        height: 200px;
+        color: #606a84;
+        font-family: "Usual-Regular";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: -0.07777778px;
+        position: absolute;
+        display: block;
+        top:55%;
+        transform: translate(-50%,-50%);
+        left: 50%;
+    }
+
+    .button_sign{
+        z-index: 5;
+        width: 248px;
+        height: 60px;
+        border-radius: 8px;
+        background: #425ae6;
+        display:block;
+        margin:245px auto;
+        cursor: pointer;
+    }
+
+    .button_sign a{
+        z-index: 5;
+        width: 231px;
+        height: 19px;
+        color: #d1f1ff;
+        font-family: "Usual-Medium";
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: -0.08888889px;
+        position: absolute;
+        /* top: 50%; */
+        /* left: 50%; */
+        transform: translate(-50%, 100%);
+    }
+
+    .mark{
+        z-index: 5;
+        width: 150px;
+        height: 59px;
+        border-radius: 29.5px;
+        background: #d3efff;
+        display:block;
+        margin: 30px auto;
+    }
+
+    .mark a{
+        z-index: 5;
+        width: 30.95px;
+        height: 19px;
+        color: #425ae6;
+        font-family: "Usual-Bold";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        position: absolute;
+        /* top: 50%; */
+        /* left: 50%; */
+        transform: translate(-50%, 100%);
+    }
